@@ -389,7 +389,7 @@ Local instructions above. A screen recording can show the commands in this order
 
 Repo:
 
-https://github.com/gorajing/hypothesis-wiki
+https://github.com/gorajing/benchmark-claim-wiki
 
 Slides / writeup:
 
