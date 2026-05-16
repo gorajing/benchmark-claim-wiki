@@ -35,6 +35,23 @@ python3 ingest_real_research.py \
   --extractor curated
 ```
 
+Build the science claim audit database used by the final submission:
+
+```bash
+python3 build_science_database.py
+```
+
+Expected database summary:
+
+```text
+papers:   2
+claims:   14
+valid:    14
+promote:  14
+safety:   6
+efficacy: 2
+```
+
 Behavior is covered by tests (the scorer reads graph state, the v1→v2 skill change is executed, not scripted):
 
 ```bash

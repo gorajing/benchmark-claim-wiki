@@ -141,6 +141,16 @@ run is deterministic and judge-repeatable.
 Real-data ingest proof:
 
 ```text
+python3 build_science_database.py
+
+database: data/science_claim_audit_db.json
+papers:   2
+claims:   14
+valid:    14
+promote:  14
+safety:   6
+efficacy: 2
+
 python3 ingest_real_research.py \
   --from-cards data/maude_2018_cart.json \
   --claims-out /tmp/maude_claims.json \
@@ -350,6 +360,8 @@ python3 -m venv .venv
 pip install -r requirements.txt
 
 python3 -m pytest -q
+
+python3 build_science_database.py
 
 python3 ingest_real_research.py \
   --from-cards data/maude_2018_cart.json \
